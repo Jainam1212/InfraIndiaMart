@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    /* For vertical fade-in */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+:root {
+    --default-color: #3498db;
+    --extraHeight: 2rem;
+}
+
+
+/* home page slider */
+.banner {
+    width: 100%;
+    height: 25vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+    width: 100%;
+    height: 25vh;
+    position: absolute;
+    top: 0;
+}
+
+.slider img {
+    object-fit: cover;
+    height: inherit;
+    width: 100%;
+}
+
+.overlay {
+    width: 100%;
+    height: 25vh;
+    background: linear-gradient(rgb(69 69 69 / 80%), rgb(69 69 69 / 80%));
+    position: absolute;
+    top: 0;
+}
+
+.logo {
+    height: 3rem;
+    margin: 1rem;
+    width: fit-content;
+}
+
+.logo img {
+    height: 100%;
+}
+
+.navbar {
+    z-index: 4;
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    justify-content: space-between;
+}
+
+.navbar.scrolled {
+    background: linear-gradient(rgba(225, 225, 225, 0.85), rgba(224, 224, 224, 0.85));
+}
+
+.list {
+    margin-right: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.list li a {
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.70);
+    text-decoration: none;
+}
+
+li.active a {
+    color: white;
+}
+
+.list li {
+    list-style-type: none;
+    margin-left: .5rem;
+    margin-right: .5rem;
+
+}
+
+.underline {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: orange;
+    transition: width 0.5s ease-in-out;
+}
+
+.active::after {
+    width: 100%;
+}
+
+.underline:hover::after {
+    width: 100%;
+}
+
+.welcome_message {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 50%;
+    position: relative;
+    top: 45%;
+    margin: auto;
+}
+
+.welcome_message p {
+    text-align: center;
+    color: white;
+}
+
+.orange_text {
+    color: orange;
+}
+
+.heading {
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+.list li {
+    list-style-type: none;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+}
+
+.underline {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: orange;
+    transition: width 0.5s ease-in-out;
+}
+
+.active::after {
+    width: 100%;
+}
+
+.underline:hover::after {
+    width: 100%;
+}
+
+.welcome_message {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 50%;
+    position: relative;
+    top: 45%;
+    margin: auto;
+}
+
+.welcome_message p {
+    text-align: center;
+    color: white;
+}
+
+.orange_text {
+    color: orange;
+}
+
+.heading {
+    text-align: center;
+    font-size: 35px;
+    margin: 5px;
+    color: white;
+}
+
+.menuItem {
+    display: block;
+    margin: 1rem;
+    font-size: 1.8rem;
+    color: black;
+    text-decoration: none;
+}
+
+.menuItem:hover {
+    text-decoration: underline;
+}
+
+.hamburger {
+    position: fixed;
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    padding: 4px;
+    border: white solid 1px;
+    background: orange;
+    cursor: pointer;
+}
+.closeIcon {
+    display: none;
+}
+#menu {
+    position: fixed;
+    transform: translateY(-100%);
+    height: fit-content;
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    backdrop-filter: blur(30px);
+    color: black;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.showMenu {
+    transform: translateY(0);
+    top: 50%;
+}
+
+.underline1 {
+    display: inline-block;
+    width: 65%;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.underline1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: orange;
+    transition: width 0.5s ease-in-out;
+}
+
+li.active1 a {
+    color: orange;
+}
+
+.active1::after {
+    width: 100%;
+}
+
+.underline1:hover::after {
+    width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+    .ham{
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
+}
+@media screen and (max-width: 85000px) and (min-width:1001px) {
+    .ham{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+}

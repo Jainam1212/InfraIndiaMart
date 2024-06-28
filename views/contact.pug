@@ -1,0 +1,158 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Infra India Mart
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css")
+        link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+        link(rel="stylesheet", href="/css/contact.css")        
+    body 
+        section#welcome_section
+                .banner
+                    .slider
+                        img(src="/images/hero-carousel-1.jpg", alt="image1")
+                    .overlay 
+                        .navbar 
+                            .logo 
+                                img.fade-in(src="/images/IIM.logo.png", alt="logo")
+                            .ham 
+                                ul#menu
+                                    li.underline1 
+                                        a.menuItem(href="/home") Home
+                                    li.underline1 
+                                        a.menuItem(href="/home/about") About
+                                    li.underline1 
+                                        a.menuItem(href="/home/cement") Cement
+                                    li.underline1 
+                                        a.menuItem(href="/home/steel") Steel
+                                    li.underline1 
+                                        a.menuItem(href="/home/inframart") Infra Mart
+                                    li.active1.underline1 
+                                        a.menuItem(href="/home/contact") Contact Us
+                                button.hamburger
+                                    i.menuIcon.material-icons menu
+                                    i.closeIcon.material-icons close
+                            .menu 
+                                ul.list.fade-in 
+                                    li.underline 
+                                        a(href="/home") Home 
+                                    li.underline
+                                        a(href="/home/about") About Us
+                                    li.underline
+                                        a(href="/home/cement") Cement
+                                    li.underline
+                                        a(href="/home/steel") Steel
+                                    li.underline 
+                                        a(href="/home/inframart") Infra-Mart
+                                    li.underline.active
+                                        a(href="/home/contact") Contact Us
+                        .welcome_message.fade-in 
+                                h1.heading Reach us here
+                                p 
+                                    span.orange_text Home 
+                                    | / Contact Us
+
+        section#contact.fade-in 
+            .outerbox 
+                .container1
+                    .innerbox1 
+                        img(src="/images/locations.png", alt="image")
+                        //- h2 Address 
+                        p 305, Shivam Arcade, Nr. S.P.Ring Road, Hanspura, Ahmedabad &#8211;382330 &#40;Gujarat&#41;
+                    .innerbox2 
+                        .box1 
+                            img(src="/images/phone-call.png", alt="image")
+                            //- h2 Call Us
+                            p  &plus;91 &#8211; 
+                                a(href="tel:+919099180208") 9099180208 
+                                | &#47; 
+                                a(href="tel:+919173822567") 9173822567 
+                        .box2 
+                            img(src="/images/email.png", alt="image")
+                            //- h2 Email us
+                            p 
+                                a(href="mailto:info@infraindiamart.com") info&#64;infraindiamart&#46;com 
+                .container2
+                    .mapbox 
+                        iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d917.5718692849972!2d72.68288841236753!3d23.086569958343553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e814421d6f949%3A0x5e78cd2c1072fcf3!2sShivam%20arcade%202!5e0!3m2!1sen!2sin!4v1716624317579!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade")
+                    .formbox
+                        form(action="/postContactPage" method="post")
+                            input(type="text" id="name" name="name" required placeholder="Name")
+                            .fields
+                                input(type="tel" id="phone" name="phone" pattern="^([6-9][0-9]{9})$" required placeholder="Contact.No")
+                                input(type="email" id="email" name="email" required placeholder="Email")
+                            input(type="text" id="subject" name="subject" required placeholder="Requirement")
+                            textarea(id="message" name="message" rows="4" required placeholder="Message")
+                            button(type="submit") Submit
+        section#footer
+                .banner12
+                    .slider12
+                        img(src="/images/footer-bg.jpg" alt="image1" id="dynamicImage")
+                        .overlay12#contentContainer 
+                            .data
+                                .leftbox 
+                                    .combine
+                                        h1 INFRA INDIA MART 
+                                        span Ahmedabad | Delhi | Mumbai | Hyderabad
+                                    p   
+                                        i.fas.fa-map-marker-alt
+                                            span(style="font-weight: normal;") 
+                                                | &nbsp;&nbsp;Reg
+                                                istered Office,
+                                                br
+                                                | 305, Shivam Arcade, Nr. S.P.Ring Road, Hanspura, Ahmedabad &#8211;382330 &#40;Gujarat&#41;
+                                    p  
+                                        i.fas.fa-phone-alt
+                                            span(style="font-weight: normal;") &nbsp;&nbsp;&plus;91 &#8211; 9099180208 &#47; 9173822567 
+                                    p 
+                                        i.fas.fa-envelope
+                                            span(style="font-weight: normal;") &nbsp;&nbsp;info&#64;infraindiamart&#46;com 
+                                .rightbox
+                                    p 
+                                        b Useful links 
+                                    ul 
+                                        li 
+                                            a(href="/home") Home
+                                        li 
+                                            a(href="/home/about") About
+                                        li 
+                                            a(href="/home/cement") Cement
+                                        li 
+                                            a(href="/home/steel") Steel
+                                        li 
+                                            a(href="/home/inframart") Infra Mart
+                                        li 
+                                            a(href="/home/contact") Contact Us
+                            .copyright 
+                                p.p1 Copyright 
+                                    b INFRA INDIA MART&#8482; 
+                                    | All rights reserved
+                                p.p2 Designed by 
+                                    span.orange_text Code-O-Logic 
+
+        script. 
+            document.addEventListener("DOMContentLoaded", () => {
+                    const dynamicImage = document.getElementById("dynamicImage");
+                    const contentContainer = document.getElementById("contentContainer");
+
+                    // Function to adjust the image height
+                    const adjustImageHeight = () => {
+                        const contentHeight = contentContainer.offsetHeight;
+                        dynamicImage.style.height = `${contentHeight}px`;
+                    };
+
+                    // Adjust the image height initially
+                    adjustImageHeight();
+
+                    // Adjust the image height whenever the window is resized
+                    window.addEventListener("resize", adjustImageHeight);
+
+                    // Adjust the image height whenever the content changes
+                    new MutationObserver(adjustImageHeight).observe(contentContainer, { childList: true, subtree: true });
+                });
+                            
+        script              
+            include ../js/navbar2.js    
+            include ../js/scroll.js   
+            include ../js/ham.js   

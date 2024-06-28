@@ -1,0 +1,171 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Infra India Mart
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css")
+        link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+        link(rel="stylesheet", href="/css/moreinfo.css")
+    body 
+        .popup 
+            .overlay1
+                p.close 
+                    a(href="#" onclick="toggle()") &#10005;
+                .formbox 
+                    form(action="/postCementInquiry" method="post")
+                        input(type="text" id="name" name="name" required placeholder="Name")
+                        .fields
+                            input(type="tel" id="phone" name="phone" pattern="^([6-9][0-9]{9})$" required placeholder="Contact.No")
+                            input(type="email" id="email" name="email" required placeholder="Email")
+                        input(type="text" id="company" name="company" required placeholder="Company name")
+                        input(type="text" id="subject" name="subject" required placeholder="Requirement")
+                        textarea(id="message" name="message" rows="4" required placeholder="Message")
+                        button(type="submit") Submit
+        section.overall
+            section#welcome_section
+                    .banner
+                        .slider
+                            img(src="/images/hero-carousel-1.jpg", alt="image1")
+                        .overlay 
+                            .navbar 
+                                .logo 
+                                    img.fade-in(src="/images/IIM.logo.png", alt="logo")
+                                .ham 
+                                    ul#menu
+                                        li.underline1 
+                                            a.menuItem(href="/home") Home
+                                        li.underline1 
+                                            a.menuItem(href="/home/about") About
+                                        li.underline1.active1 
+                                            a.menuItem(href="/home/cement") Cement
+                                        li.underline1 
+                                            a.menuItem(href="/home/steel") Steel
+                                        li.underline1 
+                                            a.menuItem(href="/home/inframart") Infra Mart
+                                        li.underline1 
+                                            a.menuItem(href="/home/contact") Contact Us
+                                    button.hamburger
+                                        i.menuIcon.material-icons menu
+                                        i.closeIcon.material-icons close
+                                .menu 
+                                    ul.list.fade-in 
+                                        li.underline 
+                                            a(href="/home") Home 
+                                        li.underline
+                                            a(href="/home/about") About Us
+                                        li.underline.active      
+                                            a(href="/home/cement") Cement
+                                        li.underline
+                                            a(href="/home/steel") Steel
+                                        li.underline
+                                            a(href="/home/inframart") Infra-Mart
+                                        li.underline
+                                            a(href="/home/contact") Contact Us
+                            .welcome_message.fade-in 
+                                h1.heading Our Products
+                                p 
+                                    span.orange_text Home 
+                                    | #{locals.tag}
+
+            section#main-content.fade-in 
+                .main 
+                    h1.title.size-increase
+                        - var parts = topic.split('INFRA INDIA MART')
+                        span(style='color: #a30000') INFRA INDIA MART
+                        | #{parts[1]}
+                    h2.code #{locals.code} 
+                    p.info #{locals.data}
+                .items
+                    h1.size-increase.mtop Products we supply
+                    .products
+                        each product in productsList
+                            .container 
+                                img(src=product.image, alt="logo")
+                                h2.product_name #{product.product}
+                                p 
+                                    a(href="#" onclick="toggle()") Inquire
+            
+            section#footer
+                .banner12
+                    .slider12
+                        img(src="/images/footer-bg.jpg" alt="image1" id="dynamicImage")
+                        .overlay12#contentContainer 
+                            .data
+                                .leftbox 
+                                    .combine
+                                        h1 INFRA INDIA MART 
+                                        span Ahmedabad | Delhi | Mumbai | Hyderabad
+                                    p   
+                                        i.fas.fa-map-marker-alt
+                                            span(style="font-weight: normal;") 
+                                                | &nbsp;&nbsp;Reg
+                                                istered Office,
+                                                br
+                                                | 305, Shivam Arcade, Nr. S.P.Ring Road, Hanspura, Ahmedabad &#8211;382330 &#40;Gujarat&#41;
+                                    p  
+                                        i.fas.fa-phone-alt
+                                            span(style="font-weight: normal;") &nbsp;&nbsp;&plus;91 &#8211; 9099180208 &#47; 9173822567 
+                                    p 
+                                        i.fas.fa-envelope
+                                            span(style="font-weight: normal;") &nbsp;&nbsp;info&#64;infraindiamart&#46;com 
+                                .rightbox
+                                    p 
+                                        b Useful links 
+                                    ul 
+                                        li 
+                                            a(href="/home") Home
+                                        li 
+                                            a(href="/home/about") About
+                                        li 
+                                            a(href="/home/cement") Cement
+                                        li 
+                                            a(href="/home/steel") Steel
+                                        li 
+                                            a(href="/home/inframart") Infra Mart
+                                        li 
+                                            a(href="/home/contact") Contact Us
+                            .copyright 
+                                p.p1 Copyright 
+                                    b INFRA INDIA MART&#8482; 
+                                    | All rights reserved
+                                p.p2 Designed by 
+                                    span.orange_text Code-O-Logic 
+                        
+        script.             
+            document.addEventListener("DOMContentLoaded", () => {
+                    const dynamicImage = document.getElementById("dynamicImage");
+                    const contentContainer = document.getElementById("contentContainer");
+
+                    // Function to adjust the image height
+                    const adjustImageHeight = () => {
+                        const contentHeight = contentContainer.offsetHeight;
+                        dynamicImage.style.height = `${contentHeight}px`;
+                    };
+
+                    // Adjust the image height initially
+                    adjustImageHeight();
+
+                    // Adjust the image height whenever the window is resized
+                    window.addEventListener("resize", adjustImageHeight);
+
+                    // Adjust the image height whenever the content changes
+                    new MutationObserver(adjustImageHeight).observe(contentContainer, { childList: true, subtree: true });
+                });
+            function toggle(){
+                event.preventDefault();
+                var blur = document.querySelector('.overall');
+                blur.classList.toggle('activeblur');
+                var visible = document.querySelector('.popup');
+                var styleI = window.getComputedStyle(visible);
+                if(styleI.display=='none'){
+                    visible.style.display='block';
+                }
+                else{
+                    visible.style.display='none';
+                }
+            }
+        script                 
+                include ../js/navbar2.js
+                include ../js/scroll.js   
+                include ../js/ham.js   

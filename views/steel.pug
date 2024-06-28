@@ -1,0 +1,60 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Infra India Mart
+        link(rel="stylesheet", href="/css/steel.css")
+        link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+    body 
+        section#welcome_section
+                .banner
+                    .slider
+                        img(src="/images/hero-carousel-1.jpg", alt="image1")
+                    .overlay 
+                        .navbar 
+                            .logo 
+                                img.fade-in(src="/images/IIM.logo.png", alt="logo")
+                            .ham 
+                                ul#menu
+                                    li.underline1 
+                                        a.menuItem(href="/home") Home
+                                    li.underline1 
+                                        a.menuItem(href="/home/about") About
+                                    li.underline1 
+                                        a.menuItem(href="/home/cement") Cement
+                                    li.underline1.active1 
+                                        a.menuItem(href="/home/steel") Steel
+                                    li.underline1 
+                                        a.menuItem(href="/home/inframart") Infra Mart
+                                    li.underline1 
+                                        a.menuItem(href="/home/contact") Contact Us
+                                button.hamburger
+                                    i.menuIcon.material-icons menu
+                                    i.closeIcon.material-icons(style="display:none") close
+                            .menu 
+                                ul.list.fade-in 
+                                    li.underline 
+                                        a(href="/home") Home 
+                                    li.underline
+                                        a(href="/home/about") About Us
+                                    li.underline
+                                        a(href="/home/cement") Cement
+                                    li.underline.active
+                                        a(href="/home/steel") Steel
+                                    li.underline 
+                                        a(href="/home/inframart") Infra-Mart
+                                    li.underline
+                                        a(href="/home/contact") Contact Us
+                        .welcome_message.fade-in 
+                                h1.heading Steel Products
+                                p 
+                                    span.orange_text Home 
+                                    | / Steel
+
+        section 
+            h1(style="text-align:center") Coming Soon!
+        script             
+            include ../js/navbar2.js            
+            include ../js/scroll.js   
+            include ../js/ham.js

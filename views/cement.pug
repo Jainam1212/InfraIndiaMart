@@ -1,0 +1,271 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Infra India Mart
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css")
+        link(rel="stylesheet", href="/css/cement.css")
+        link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+    body 
+            section#welcome_section
+                .banner
+                    .slider
+                        img(src="/images/hero-carousel-1.jpg", alt="image1")
+                    .overlay 
+                        .navbar 
+                            .logo 
+                                img.fade-in(src="/images/IIM.logo.png", alt="logo")
+                            .ham 
+                                ul#menu
+                                    li.underline1.active1 
+                                        a.menuItem(href="/home") Home
+                                    li.underline1 
+                                        a.menuItem(href="/home/about") About
+                                    li.underline1 
+                                        a.menuItem(href="/home/cement") Cement
+                                    li.underline1 
+                                        a.menuItem(href="/home/steel") Steel
+                                    li.underline1 
+                                        a.menuItem(href="/home/inframart") Infra Mart
+                                    li.underline1 
+                                        a.menuItem(href="/home/contact") Contact Us
+                                button.hamburger
+                                    i.menuIcon.material-icons menu
+                                    i.closeIcon.material-icons(style="display:none") close
+                            .menu 
+                                ul.list.fade-in 
+                                    li.underline 
+                                        a(href="/home") Home 
+                                    li.underline
+                                        a(href="/home/about") About Us
+                                    li.underline.active      
+                                        a(href="/home/cement") Cement
+                                    li.underline
+                                        a(href="/home/steel") Steel
+                                    li.underline 
+                                        a(href="/home/inframart") Infra-Mart
+                                    li.underline
+                                        a(href="/home/contact") Contact Us
+                        .welcome_message.fade-in 
+                                h1.heading Cement products
+                                p 
+                                    span.orange_text Home 
+                                    | / Cement
+                        
+            section#home.fade-in
+                .formbox 
+                    form(action="/postCementInquiry" method="post")
+                            input(type="text" id="name" name="name" required placeholder="Name")
+                            .fields
+                                input(type="tel" id="phone" name="phone" pattern="^([6-9][0-9]{9})$" required placeholder="Contact.No")
+                                input(type="email" id="email" name="email" required placeholder="Email")
+                            input(type="text" id="company" name="company" required placeholder="Company name")
+                            input(type="text" id="subject" name="subject" required placeholder="Requirement")
+                            textarea(id="message" name="message" rows="4" required placeholder="Message")
+                            button(type="submit") Submit
+                .slider1
+                        .slides1 
+                            input(type="radio" name="radio-button1" id="R1")
+                            input(type="radio" name="radio-button1" id="R2")
+                            input(type="radio" name="radio-button1" id="R3")
+                            input(type="radio" name="radio-button1" id="R4")
+                            input(type="radio" name="radio-button1" id="R5")
+
+                            .slide1.first1
+                                img(src="/images/hero-carousel-1.jpg" alt="img_1")
+                            .slide1
+                                img(src="/images/hero-carousel-2.jpg" alt="img_2")
+                            .slide1
+                                img(src="/images/hero-carousel-3.jpg" alt="img_3")
+                            .slide1
+                                img(src="/images/hero-carousel-4.jpg" alt="img_4")
+                            .slide1
+                                img(src="/images/hero-carousel-5.jpg" alt="img_5")
+
+                            .navigation-auto1
+                                .autobutton1
+                                .autobutton2
+                                .autobutton3
+                                .autobutton4
+                                .autobutton5
+
+                        .navigation-manual1
+                            label(for="R1" class="manualbutton")
+                            label(for="R2" class="manualbutton")
+                            label(for="R3" class="manualbutton")
+                            label(for="R4" class="manualbutton")
+                            label(for="R5" class="manualbutton")
+            section#filter-product.fade-in 
+                h1 We have large variety of products based on following two categories
+                .outerboxg 
+                    h2 By cement product/type
+                    .gridbox 
+                        .categoryg 
+                            h3 OPC 53 - OPC 43
+                            form(action="/getMoreInfo" method="post") 
+                                input(type="hidden", name="name" value="opc")
+                                button(type="submit") More info
+                                button(type="button" id="inquiry") Inquire
+                        .categoryg 
+                            h3 SRPC/SRC 
+                            form(action="/getMoreInfo" method="post") 
+                                input(type="hidden", name="name" value="srpc")
+                                button(type="submit") More info
+                                button(type="button" id="inquiry") Inquire
+                        .categoryg 
+                            h3 PPC 
+                            form(action="/getMoreInfo" method="post") 
+                                input(type="hidden", name="name" value="ppc")
+                                button(type="submit") More info
+                                button(type="button" id="inquiry") Inquire
+                        .categoryg 
+                            h3 PSC/Slage 
+                            form(action="/getMoreInfo" method="post") 
+                                input(type="hidden", name="name" value="psc")
+                                button(type="submit") More info
+                                button(type="button" id="inquiry") Inquire
+            section#filter-manufacturer.fade-in  
+                .outerboxg 
+                    h2 By cement manufacturers   
+                    .gridbox
+                        .categoryg 
+                            img(src="/images/c16.png", alt="logo")
+                            form(action="/getMoreInfo1" method="post") 
+                                input(type="hidden", name="name" value="acc")
+                                button(type="submit") More info
+                                button(type="button" id="inquiry") Inquire
+                        .categoryg 
+                            img(src="/images/c17.png", alt="logo")
+                            form(action="/getMoreInfo1" method="post") 
+                                input(type="hidden", name="name" value="jkl")
+                                button(type="submit") More info
+                                button(type="button" id="inquiry") Inquire
+                        .categoryg 
+                            img(src="/images/c9.png", alt="logo")
+                            form(action="/getMoreInfo1" method="post") 
+                                input(type="hidden", name="name" value="hathi")
+                                button(type="submit") More info
+                                button(type="button" id="inquiry") Inquire
+                        .categoryg 
+                            img(src="/images/c10.png", alt="logo")
+                            form(action="/getMoreInfo1" method="post") 
+                                input(type="hidden", name="name" value="sagar")
+                                button(type="submit") More info
+                                button(type="button" id="inquiry") Inquire
+                        .categoryg 
+                            img(src="/images/c11.png", alt="logo")
+                            form(action="/getMoreInfo2" method="post") 
+                                input(type="hidden", name="name" value="shree")
+                                button(type="submit") More info
+                                button(type="button" id="inquiry") Inquire
+                        .categoryg 
+                            img(src="/images/c12.png", alt="logo")
+                            form(action="/getMoreInfo2" method="post") 
+                                input(type="hidden", name="name" value="kamal")
+                                button(type="submit") More info
+                                button(type="button" id="inquiry") Inquire
+                        .categoryg 
+                            img(src="/images/c13.png", alt="logo")
+                            form(action="/getMoreInfo2" method="post") 
+                                input(type="hidden", name="name" value="birla")
+                                button(type="submit") More info
+                                button(type="button" id="inquiry") Inquire
+                        .categoryg 
+                            img(src="/images/c14.png", alt="logo")
+                            form(action="/getMoreInfo2" method="post") 
+                                input(type="hidden", name="name" value="jks")
+                                button(type="submit") More info
+                                button(type="button" id="inquiry") Inquire
+                        .categoryg 
+                            img(src="/images/c15.png", alt="logo")
+                            form(action="/getMoreInfo2" method="post") 
+                                input(type="hidden", name="name" value="bangur")
+                                button(type="submit") More info
+                                button(type="button" id="inquiry") Inquire
+
+            section#welcome_section
+                .banner1
+                    .slider12
+                        img(src="/images/footer-bg.jpg" alt="image1" id="dynamicImage")
+                        .overlay1#contentContainer 
+                            .data
+                                .leftbox 
+                                    .combine
+                                        h1 INFRA INDIA MART 
+                                        span Ahmedabad | Delhi | Mumbai | Hyderabad
+                                    p   
+                                        i.fas.fa-map-marker-alt
+                                            span(style="font-weight: normal;") 
+                                                | &nbsp;&nbsp;Reg
+                                                istered Office,
+                                                br
+                                                | 305, Shivam Arcade, Nr. S.P.Ring Road, Hanspura, Ahmedabad &#8211;382330 &#40;Gujarat&#41;
+                                    p  
+                                        i.fas.fa-phone-alt
+                                            span(style="font-weight: normal;") &nbsp;&nbsp;&plus;91 &#8211; 9099180208 &#47; 9173822567 
+                                    p 
+                                        i.fas.fa-envelope
+                                            span(style="font-weight: normal;") &nbsp;&nbsp;info&#64;infraindiamart&#46;com 
+                                .rightbox
+                                    p 
+                                        b Useful links 
+                                    ul 
+                                        li 
+                                            a(href="/home") Home
+                                        li 
+                                            a(href="/home/about") About
+                                        li 
+                                            a(href="/home/cement") Cement
+                                        li 
+                                            a(href="/home/steel") Steel
+                                        li 
+                                            a(href="/home/inframart") Infra Mart
+                                        li 
+                                            a(href="/home/contact") Contact Us
+                            .copyright 
+                                p.p1 Copyright 
+                                    b INFRA INDIA MART&#8482; 
+                                    | All rights reserved
+                                p.p2 Designed by 
+                                    span.orange_text Code-O-Logic 
+                        
+            script. 
+                document.addEventListener("DOMContentLoaded", () => {
+                    const dynamicImage = document.getElementById("dynamicImage");
+                    const contentContainer = document.getElementById("contentContainer");
+
+                    // Function to adjust the image height
+                    const adjustImageHeight = () => {
+                        const contentHeight = contentContainer.offsetHeight;
+                        dynamicImage.style.height = `${contentHeight}px`;
+                    };
+
+                    // Adjust the image height initially
+                    adjustImageHeight();
+
+                    // Adjust the image height whenever the window is resized
+                    window.addEventListener("resize", adjustImageHeight);
+
+                    // Adjust the image height whenever the content changes
+                    new MutationObserver(adjustImageHeight).observe(contentContainer, { childList: true, subtree: true });
+                });
+                document.addEventListener("DOMContentLoaded", function () {
+                    var counter1 = 1;
+                    setInterval(function () {
+                        document.getElementById('R' + counter1).checked = true;
+                        counter1++;
+                        if (counter1 > 5) {
+                            counter1 = 1;
+                        }
+                    }, 3000);
+                });
+                var copy = document.querySelector('.logos-slide').cloneNode(true);
+                document.querySelector('.logos').appendChild(copy);
+                var copy = document.querySelector('.logos-slide1').cloneNode(true);
+                document.querySelector('.logos1').appendChild(copy);
+            script                 
+                include ../js/navbar2.js
+                include ../js/smoothscroll.js
+                include ../js/scroll.js   
+                include ../js/ham.js

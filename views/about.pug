@@ -1,0 +1,189 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Infra India Mart
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css")
+        link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+        link(rel='preconnect' href='https://fonts.googleapis.com')
+        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin)
+        link(href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap' rel='stylesheet')
+        link(rel="stylesheet", href="/css/about.css")
+    body 
+        .popup 
+            .overlay
+                p.close 
+                    a(href="#" onclick="toggle()") &#10005;
+                h2 
+                    | More about 
+                    span.purple_text INFRA INDIA MART 
+                p INFRA INDIA MART is a leading cement supplier in Pan India. INFRA INDIA MART prides itself on being professionally managed and dedicated to meeting the needs of both urban and rural development projects, infrastructure initiatives, Special Economic Zone (SEZ) developments and institutional customers. Renowned for our professionalism and commitment to excellence,  INFRA INDIA MART supplies cement in Highways Projects, Road Projects, Bridge Projects, Railways &Airport Projects, Building & Housing Projects, Water process & savage Projects, Factory Projects, Power and transmission Projects, By consistently delivering high-quality cement across these diverse sectors, INFRA INDIA MART has established itself as a trusted and reliable partner in the construction industry. 
+                br
+                p INFRA INDIA MART takes pride in its strategic partnerships as an associate and distributor of major cement manufacturers in India. Our collaboration with renowned brands such as ACC Cement, Shree Cement, JK Laxmi Cement, JK Super Cement, Birla Chetak Cement, Kamal Cement, Hathi Cement, Sagar Cement, and other leading Cement Manufacturers in the industry enables us to offer a diverse range of high-quality cement products to our customers. 
+                br
+                p By associating with these esteemed cement manufacturers, INFRA INDIA MART ensures access to various cement blends and types, catering to the unique requirements of different construction projects. INFRA INDIA MART offers a comprehensive range of cement products tailored to diverse construction needs.  
+                br
+                p INFRA INDIA MART Supplies Ordinary Portland cement - OPC 53 Grade & OPC 43 Grade, Portland pozzolana cement- PPC Cement, Sulphates resisting cement – SRPC cement, Blast Furnace Slag Cement – PSC Slag Cement,  
+                br
+                p At INFRA INDIA MART, our focus extends far beyond mere cement supply; we prioritize forging enduring relationships with our customers built on trust and respect. Our relentless dedication to customer satisfaction has solidified our position as a premier supplier in the cement market. Backed by a robust support team,  With a team characterized by passion and dedication, INFRA INDIA MART is primed for sustained growth and success. Our unwavering pursuit of excellence ensures that we remain at the forefront of the industry as a leading cement supplier, earning the trust and loyalty of customers nationwide.
+        section.overall 
+            section#welcome_section
+                .banner
+                    .slider
+                        img(src="/images/hero-carousel-1.jpg", alt="image1")
+                    .overlay1 
+                        .navbar 
+                            .logo 
+                                img.fade-in(src="/images/IIM.logo.png", alt="logo")
+                            .ham 
+                                ul#menu
+                                    li.underline1 
+                                        a.menuItem(href="/home") Home
+                                    li.underline1.active1 
+                                        a.menuItem(href="/home/about") About
+                                    li.underline1 
+                                        a.menuItem(href="/home/cement") Cement
+                                    li.underline1 
+                                        a.menuItem(href="/home/steel") Steel
+                                    li.underline1 
+                                        a.menuItem(href="/home/inframart") Infra Mart
+                                    li.underline1 
+                                        a.menuItem(href="/home/contact") Contact Us
+                                button.hamburger
+                                    i.menuIcon.material-icons menu
+                                    i.closeIcon.material-icons close
+                            .menu 
+                                ul.list.fade-in 
+                                    li.underline 
+                                        a(href="/home") Home 
+                                    li.underline.active      
+                                        a(href="/home/about") About Us
+                                    li.underline
+                                        a(href="/home/cement") Cement
+                                    li.underline
+                                        a(href="/home/steel") Steel
+                                    li.underline 
+                                        a(href="/home/inframart") Infra-Mart
+                                    li.underline
+                                        a(href="/home/contact") Contact Us
+                        .welcome_message.fade-in 
+                                h1.heading Who Are We
+                                p 
+                                    span.orange_text Home 
+                                    | / About Us
+            section#information.fade-in 
+                .main-container
+                    .container1
+                        .head
+                            h1.poppins-bold 
+                                | What is 
+                                span.purple_text INFRA INDIA MART 
+                        .information
+                            p 
+                                | INFRA INDIA MART is a leading and rapidly expanding cement supplier in Pan India. Our company prides itself on being professionally managed and dedicated to meeting the needs of both urban and rural development projects, infrastructure Projects, Special Economic Zone (SEZ) developments, as well as institutional customers.  INFRA INDIA MART has established itself as a trusted and reliable partner in the construction industry.
+                                br 
+                                br
+                                | INFRA INDIA MART Supplied cement to  Highways, Roads, and Bridges Projects, Railway and Airports Projects, Building Construction Projects, Water Supply, Water Processes & Sevage Projects, Power Generation and  Transmission of power Projects, Factories Construction Projects
+                            p 
+                                a(href="#" onclick="toggle()") Read more
+                    .container2 
+                        img(src="/images/india.png", alt="image")
+            section#footprints.fade-in 
+                .states 
+                    h1 Our offices
+                    .city 
+                        .city-box 
+                            img(src="/images/AHMEDABAD.jpg", alt="")
+                            h2 Ahmedabad
+                        .city-box 
+                            img(src="/images/DELHI.jpg", alt="")
+                            h2 Delhi
+                        .city-box 
+                            img(src="/images/MUMBAI.jpg", alt="")
+                            h2 Mumbai
+                        .city-box 
+                            img(src="/images/HYDRABAD.jpg", alt="")
+                            h2 Hyderabad
+            section#welcome_section
+                .banner12
+                    .slider12
+                        img(src="/images/footer-bg.jpg" alt="image1" id="dynamicImage")
+                        .overlay12#contentContainer 
+                            .data
+                                .leftbox 
+                                    .combine
+                                        h1 INFRA INDIA MART 
+                                        span Ahmedabad | Delhi | Mumbai | Hyderabad
+                                    p   
+                                        i.fas.fa-map-marker-alt
+                                            span(style="font-weight: normal;") 
+                                                | &nbsp;&nbsp;Reg
+                                                istered Office,
+                                                br
+                                                | 305, Shivam Arcade, Nr. S.P.Ring Road, Hanspura, Ahmedabad &#8211;382330 &#40;Gujarat&#41;
+                                    p  
+                                        i.fas.fa-phone-alt
+                                            span(style="font-weight: normal;") &nbsp;&nbsp;&plus;91 &#8211; 9099180208 &#47; 9173822567 
+                                    p 
+                                        i.fas.fa-envelope
+                                            span(style="font-weight: normal;") &nbsp;&nbsp;info&#64;infraindiamart&#46;com 
+                                .rightbox
+                                    p 
+                                        b Useful links 
+                                    ul 
+                                        li 
+                                            a(href="/home") Home
+                                        li 
+                                            a(href="/home/about") About
+                                        li 
+                                            a(href="/home/cement") Cement
+                                        li 
+                                            a(href="/home/steel") Steel
+                                        li 
+                                            a(href="/home/inframart") Infra Mart
+                                        li 
+                                            a(href="/home/contact") Contact Us
+                            .copyright 
+                                p.p1 Copyright 
+                                    b INFRA INDIA MART&#8482; 
+                                    | All rights reserved
+                                p.p2 Designed by 
+                                    span.orange_text Code-O-Logic 
+                    
+        script. 
+            document.addEventListener("DOMContentLoaded", () => {
+                    const dynamicImage = document.getElementById("dynamicImage");
+                    const contentContainer = document.getElementById("contentContainer");
+
+                    // Function to adjust the image height
+                    const adjustImageHeight = () => {
+                        const contentHeight = contentContainer.offsetHeight;
+                        dynamicImage.style.height = `${contentHeight}px`;
+                    };
+
+                    // Adjust the image height initially
+                    adjustImageHeight();
+
+                    // Adjust the image height whenever the window is resized
+                    window.addEventListener("resize", adjustImageHeight);
+
+                    // Adjust the image height whenever the content changes
+                    new MutationObserver(adjustImageHeight).observe(contentContainer, { childList: true, subtree: true });
+                });
+            function toggle(){
+                var blur = document.querySelector('.overall');
+                blur.classList.toggle('activeblur');
+                var visible = document.querySelector('.popup');
+                var styleI = window.getComputedStyle(visible);
+                if(styleI.display=='none'){
+                    visible.style.display='block';
+                }
+                else{
+                    visible.style.display='none';
+                }
+            }
+        script         
+            include ../js/navbar2.js           
+            include ../js/scroll.js   
+            include ../js/ham.js   
