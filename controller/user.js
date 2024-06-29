@@ -31,8 +31,8 @@ export const postContact = (req,res) => {
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: "medwelljunction@gmail.com",
-        pass: "bknuioewvrkobjls",
+        user: "infraindiamart@gmail.com",
+        pass: "itvybysyftwaklyh",
       },
     });
     transporter
@@ -51,8 +51,8 @@ export const postCementI = (req,res) =>{
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: "medwelljunction@gmail.com",
-      pass: "bknuioewvrkobjls",
+      user: "infraindiamart@gmail.com",
+      pass: "itvybysyftwaklyh",
     },
   });
   transporter
