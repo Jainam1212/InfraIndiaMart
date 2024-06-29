@@ -38,7 +38,7 @@ export const postContact = (req,res) => {
     transporter
       .sendMail({
         from: "medwelljunction@gmail.com",
-        to: "jainamkp12@gmail.com",
+        to: "info@infraindiamart.com",
         subject: `${subject}`,
         text: `Inquiry from ${name} , email : ${email}, phone: ${phone}, message : ${message}`,
       })
