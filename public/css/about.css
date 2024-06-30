@@ -268,7 +268,6 @@ li.active a {
 }
 
 
-
 .states{
     display: flex;
     flex-direction: column;
@@ -480,7 +479,9 @@ li.active1 a {
     .data {
         flex-direction: column;
     }
-
+    .counter-numbers{
+    font-size: xx-large;
+    }
     .leftbox p {
         width: auto;
     }
@@ -510,6 +511,9 @@ li.active1 a {
 @media screen and (max-width: 650px) and (min-width:501px){
     .main-container{
         flex-direction: column;
+    }
+    .counter-numbers{
+    font-size: xx-large;
     }
     .container1{
         width: auto;
