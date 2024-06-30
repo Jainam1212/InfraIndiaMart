@@ -7,12 +7,12 @@ const menuIcon = document.querySelector(".menuIcon");
 function toggleMenu() {
   if (menu.classList.contains("showMenu")) {
     menu.classList.remove("showMenu");
-    menu.style.top = "0";
+    menu.style.display = "none";
     closeIcon.style.display = "none";
     menuIcon.style.display = "block";
   } else {
     menu.classList.add("showMenu");
-    menu.style.top="65%";
+    menu.style.display="block";
     closeIcon.style.display = "block";
     menuIcon.style.display = "none";
   }
