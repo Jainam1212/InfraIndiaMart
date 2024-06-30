@@ -515,7 +515,7 @@ li.active1 a {
         width: auto;
     }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1070px) {
     .ham{
         display: block;
     }
@@ -523,7 +523,7 @@ li.active1 a {
         display: none;
     }
 }
-@media screen and (max-width: 85000px) and (min-width:1001px) {
+@media screen and (max-width: 85000px) and (min-width:1071px) {
     .ham{
         display: none;
     }
