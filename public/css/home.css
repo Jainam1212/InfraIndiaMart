@@ -624,7 +624,6 @@ li.active a {
 
 #menu {
     position: fixed;
-    transform: translateY(-100%);
     height: fit-content;
     transition: transform 0.2s;
     top: 0;
@@ -730,7 +729,7 @@ li.active1 a {
     }
 
 }
-@media screen and (max-width: 700px) and (min-width: 501px) {
+@media screen and (max-width: 800px) and (min-width: 501px) {
     .container {
         flex-direction: column-reverse;
     }
@@ -744,6 +743,8 @@ li.active1 a {
     .support p {
         width: 100%;
     }
+}
+@media screen and (max-width: 700px) and (min-width: 501px) {
     .accomplishment1{
         flex-direction: column;
         align-items: center;
