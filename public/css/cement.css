@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 *::-webkit-scrollbar {
@@ -366,7 +366,7 @@ button:hover {
     margin-bottom: 2rem;
     text-align: center;
     font-size: 2rem;
-    margin-bottom: 3rem;
+    margin-top: 1rem;
 }
 .gridbox{
     width: 100%;
