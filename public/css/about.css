@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 *::-webkit-scrollbar {
@@ -12,8 +12,17 @@
     font-weight: 700;
     font-style: normal;
 }
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 .orange_text {
     color: orange;
+}
+.blue_text{
+    color: rgb(3, 3, 80);
+    font-weight: bold;
 }
 .purple_text {
     color: var(--maroon);
@@ -282,7 +291,7 @@ li.active a {
     height: 12rem;
     width: 15rem;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 
