@@ -612,3 +612,8 @@ li.active1 a {
         display: block;
     }
 }
+@media screen and (max-width: 650px) {
+    .counter-numbers{
+    font-size: xx-large;
+    }
+}
