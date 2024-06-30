@@ -77,8 +77,10 @@ export const moreInfo = async(req,res) =>{
     console.log(search_result);
     res.render("moreInfo.pug", {
       tag: "/ Cement / OPC",
+      company: "",
       topic: "OPC 43/OPC 53",
-      code: "Ordinary Portland Cement  - OPC CEMENT -  IS:12269-1987",
+      code: "Ordinary Portland Cement  - OPC",
+      standard: "IS:12269-1987",
       data: data,
       productsList: search_result,
     });
@@ -89,9 +91,11 @@ export const moreInfo = async(req,res) =>{
     let search_result = await srpcInfo.find({ name: query });
     console.log(search_result);
     res.render("moreInfo.pug", {
+      company: "",
       tag: "/ Cement / SRPC",
       topic: "SRPC / SRC",
-      code: "Sulphate Resisting Portland Cement - SRPC IS Standard : IS 12330: 1988",
+      code: "Sulphate Resisting Portland Cement - SRPC",
+      standard: "IS 12330: 1988",
       data: data,
       productsList: search_result,
     });
@@ -102,9 +106,11 @@ export const moreInfo = async(req,res) =>{
     let search_result = await ppcInfo.find({ name: query });
     console.log(search_result);
     res.render("moreInfo.pug", {
+      company: "",
       tag: "/ Cement / PPC",
       topic: "PPC",
-      code: "Portland Pozzolana Cement- PPC IS Standard : IS 1489 (Part-1):2015",
+      code: "Portland Pozzolana Cement- PPC ",
+      standard: "IS 1489 (Part-1):2015",
       data: data,
       productsList: search_result,
     });
@@ -115,9 +121,11 @@ export const moreInfo = async(req,res) =>{
     let search_result = await pscInfo.find({ name: query });
     console.log(search_result);
     res.render("moreInfo.pug", {
+      company: "",
       tag: "/ Cement / PSC",
       topic: "PSC / Slage",
-      code: "Portland Slag Cement - PSC IS Standard : IS 455: 2015 .",
+      code: "Portland Slag Cement - PSC",
+      standard: "IS 455: 2015",
       data: data,
       productsList: search_result,
     });
@@ -134,6 +142,7 @@ export const moreInfo1 = async(req,res) =>{
     let search_result = await accInfo.find({name:query})
     console.log(search_result);
     res.render("moreInfo.pug", {
+      company: "INFRA INDIA MART",
       tag: "/ Cement / ACC",
       topic: "INFRA INDIA MART associate with ACC LIMITED",
       data: data,
@@ -146,6 +155,7 @@ export const moreInfo1 = async(req,res) =>{
     let search_result = await jklInfo.find({ name: query });
     console.log(search_result);
     res.render("moreInfo.pug", {
+      company: "INFRA INDIA MART",
       tag: "/ Cement / JK Lakshmi Cement",
       topic: "INFRA INDIA MART associate with JK Lakshmi Cement",
       data: data,
@@ -158,6 +168,7 @@ export const moreInfo1 = async(req,res) =>{
     let search_result = await hathiInfo.find({ name: query });
     console.log(search_result);
     res.render("moreInfo.pug", {
+      company: "INFRA INDIA MART",
       tag: "/ Cement / Hathi Cement",
       topic: "INFRA INDIA MART associate with Hathi Cement",
       data: data,
@@ -170,6 +181,7 @@ export const moreInfo1 = async(req,res) =>{
     let search_result = await sagarInfo.find({ name: query });
     console.log(search_result);
     res.render("moreInfo.pug", {
+      company: "INFRA INDIA MART",
       tag: "/ Cement / Sagar Cement",
       topic: "INFRA INDIA MART associate with Sagar Cement",
       data: data,
@@ -186,6 +198,7 @@ export const moreInfo2 = async (req, res) => {
     let search_result = await bangurInfo.find({ name: "bangur" });
     console.log(search_result);
     res.render("moreInfo.pug", {
+      company: "INFRA INDIA MART",
       tag: "/ Cement / Shree cement ltd",
       topic: "INFRA INDIA MART associate with Shree Cement Limited",
       data: data,
@@ -198,6 +211,7 @@ export const moreInfo2 = async (req, res) => {
     let search_result = await kamalInfo.find({ name: query });
     console.log(search_result);
     res.render("moreInfo.pug", {
+      company: "INFRA INDIA MART",
       tag: "/ Cement / Kamal cement",
       topic: "INFRA INDIA MART associate with Kamal Cement",
       data: data,
@@ -210,6 +224,7 @@ export const moreInfo2 = async (req, res) => {
     let search_result = await birlaInfo.find({ name: query });
     console.log(search_result);
     res.render("moreInfo.pug", {
+      company: "INFRA INDIA MART",
       tag: "/ Cement / MP Birla group",
       topic: "INFRA INDIA MART associate with MP BIRLA GROUP",
       data: data,
@@ -222,6 +237,7 @@ export const moreInfo2 = async (req, res) => {
     let search_result = await jksInfo.find({ name: query });
     console.log(search_result);
     res.render("moreInfo.pug", {
+      company: "INFRA INDIA MART",
       tag: "/ Cement / JK super cement",
       topic: "INFRA INDIA MART associate with JK Super Cement",
       data: data,
@@ -234,6 +250,7 @@ export const moreInfo2 = async (req, res) => {
     let search_result = await bangurInfo.find({ name: query });
     console.log(search_result);
     res.render("moreInfo.pug", {
+      company: "INFRA INDIA MART",
       tag: "/ Cement / Bangur cement",
       topic: "INFRA INDIA MART associate with Bangur Cement",
       data: data,

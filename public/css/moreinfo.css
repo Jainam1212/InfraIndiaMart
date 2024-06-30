@@ -1,13 +1,17 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 *::-webkit-scrollbar {
     display: none;
 }
-
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 .fade-in {
     opacity: 0;
     transform: translateY(30px);
@@ -300,6 +304,14 @@ li.active a {
 .code{
     text-align: center;
     margin-bottom: 1%;
+    font-size: xx-large;
+    color: #0006ab;
+}
+.code1{
+    text-align: center;
+    margin-bottom: 1%;
+    color: #770000;
+    font-size: x-large;
 }
 .size-increase{
     font-size: xx-large;
