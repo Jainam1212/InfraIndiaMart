@@ -487,6 +487,7 @@ button:hover {
     bottom: 0;
     z-index: 99;
     backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
     color: black;
     list-style: none;
     display: flex;    
