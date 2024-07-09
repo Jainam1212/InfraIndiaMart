@@ -6,6 +6,7 @@ import { dirname } from "path";
 import router from "./routes/user.js";
 import { connectDataBase } from "./data/database.js";
 import bodyParser from "body-parser";
+import favicon from 'serve-favicon';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
@@ -20,6 +21,7 @@ app.set("view engine", "pug");
 app.set("views", path.join(__dirname, "views"));
 app.use(express.static(path.join(__dirname, "js")));
 app.use(express.static(path.join(__dirname, "public")));
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 
 try {
   connectDataBase();
