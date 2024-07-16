@@ -12,6 +12,9 @@ router.get("/home/cement", getCementPage);
 router.get("/home/steel", getSteelPage);
 router.get("/home/inframart",getMarket);
 router.get("/moreinfo", getMIPage);
+router.get('/sitemap.xml', (req, res) => {
+  res.sendFile(path.join(__dirname, '../public/sitemap.xml'));
+});
 
 router.post('/postContactPage',postContact);
 router.post("/getMoreInfo",moreInfo);
