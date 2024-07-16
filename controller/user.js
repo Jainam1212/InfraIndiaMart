@@ -1,6 +1,6 @@
 import nodemailer from 'nodemailer';
 import { accInfo, bangurInfo, birlaInfo, hathiInfo, jklInfo, jksInfo, kamalInfo, opcInfo, ppcInfo, pscInfo, sagarInfo, srpcInfo } from '../models/user.js';
-import dotenv from 'dotenv';
+import dotenv from 'dotenv'; 
 dotenv.config();
 
 export const getHomePage = (req,res) => {
