@@ -65,9 +65,12 @@
 }
 
 .logo {
-    height: 3rem;
+    height: 2rem;
     margin: 1rem;
     width: fit-content;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 .logo img {
@@ -85,7 +88,9 @@
 }
 
 .navbar.scrolled {
-    background: linear-gradient(rgba(225, 225, 225, 0.85), rgba(224, 224, 224, 0.85));
+    /* background: linear-gradient(rgba(225, 225, 225, 0.85), rgba(224, 224, 224, 0.85)); */
+    background: white;
+    box-shadow: 5px 5px 15px -5px grey;
 }
 
 /* .list li:hover a {
@@ -99,7 +104,7 @@
 
 .list li a {
     font-size: 22px;
-    color: rgba(255, 255, 255, 0.70);
+    color: rgba(255, 255, 255, 0.70);;
     text-decoration: none;
 }
 
@@ -197,7 +202,9 @@ li.active a {
 }
 
 .slide1 {
-    background: #d9d9d96b;
+    /* background: #d9d9d96b; */
+    margin-top: 1rem;
+    background: #fff;
     width: 20%;
     transition: 2s;
     display: flex;
@@ -425,6 +432,15 @@ li.active a {
     width: 45%;
     display: flex;
 }
+.envelop:hover{
+    border: 1px solid orange;
+    color: orange;
+    transition: .5s;
+}
+.envelop:hover h2.counter-numbers{
+    color: orange;
+    transition: .5s;
+}
 .symbol{
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -479,7 +495,7 @@ li.active a {
 .leftbox h1 {
     width: fit-content;
     font-weight: 900;
-    color: #770000;
+    color: rgb(213, 213, 213);
     /* margin: 1rem;
     margin-bottom: 3rem; */
 }
@@ -493,6 +509,7 @@ li.active a {
 .combine {
     width: fit-content;
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 .rightbox {
@@ -549,8 +566,8 @@ li.active a {
 }
 #partners h1{
     font-size: 30px;
-    padding: 3rem;
-    padding-top: 4.5rem;
+    padding: 2.5rem;
+    padding-top: 4rem;
     color: gray;
 }
 .logos{
@@ -568,7 +585,7 @@ li.active a {
 .logos::before,.logos::after{
     position: absolute;
     width: 30rem;
-    height: 125px;
+    height: 150px;
     content: "";
     z-index: 3;
 }
@@ -581,7 +598,8 @@ li.active a {
     animation: slide infinite linear 20s;
 }
 .logos-slide img{
-    height: 120px;
+    height: 150px;
+    width: 150px;
     object-fit: contain;
     margin: 0 40px;
 }
@@ -624,6 +642,7 @@ li.active a {
 
 #menu {
     position: fixed;
+    /* transform: translateY(-100%); */
     height: fit-content;
     transition: transform 0.2s;
     top: 0;
@@ -681,8 +700,11 @@ li.active1 a {
         padding-top: 0;
         padding-bottom: 0;
     }
+    .logo img {
+        width: 70%;
+    }
     .slide1 img {
-        height: 35vh;
+        height: 30vh;
     }
     .support {
         width: 80%;
@@ -705,6 +727,7 @@ li.active1 a {
         margin-top: 2rem;
         margin-bottom: 2rem;
     }
+
     #partners h1{
         padding-top: 0;
         padding: 1rem;
@@ -728,7 +751,6 @@ li.active1 a {
     .vis_mis img{
         width: 80%;
     }
-
 }
 @media screen and (max-width: 800px) and (min-width: 501px) {
     .container {
@@ -804,7 +826,7 @@ li.active1 a {
 
 @media screen and (max-width: 1400px) and (min-width: 1201px) {
     .slide1 img {
-        height: 65vh;
+        height: 75vh;
     }
     .vis_mis img{
         width: 55%;
@@ -813,7 +835,7 @@ li.active1 a {
 
 @media screen and (max-width: 1600px) and (min-width: 1401px) {
     .slide1 img {
-        height: 75vh;
+        height: 80vh;
     }
     .vis_mis img{
         width: 50%;
@@ -824,7 +846,7 @@ li.active1 a {
         width: 35%;
     }
 }
-@media screen and (max-width: 1070px) {
+@media screen and (max-width: 1000px) {
     .ham{
         display: block;
     }
@@ -832,16 +854,11 @@ li.active1 a {
         display: none;
     }
 }
-@media screen and (max-width: 85000px) and (min-width:1071px) {
+@media screen and (max-width: 85000px) and (min-width:1001px) {
     .ham{
         display: none;
     }
     .menu{
         display: block;
-    }
-}
-@media screen and (max-width: 650px) {
-    .counter-numbers{
-    font-size: xx-large;
     }
 }
