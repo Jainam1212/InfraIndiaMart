@@ -39,13 +39,13 @@ html(lang="en")
             section#welcome_section
                     .banner
                         .slider
-                            img(src="/images/hero-carousel-1.jpg", alt="image1")
+                            img(src="/images/page-title-bg.jpg", alt="image1")
                         .overlay 
                             .navbar 
                                 .logo 
-                                    img.fade-in(src="/images/IIM.logo.png", alt="logo")
+                                    img.fade-in(src="/images/logo-2.png", alt="logo")
                                 .ham 
-                                    ul#menu(style="display:none")
+                                    ul#menu
                                         li.underline1 
                                             a.menuItem(href="/home") Home
                                         li.underline1 
@@ -72,7 +72,7 @@ html(lang="en")
                                         li.underline
                                             a(href="/home/steel") Steel
                                         li.underline
-                                            a(href="/home/inframart") Infra-Mart
+                                            a(href="/home/inframart") Infra Mart
                                         li.underline
                                             a(href="/home/contact") Contact Us
                             .welcome_message.fade-in 
@@ -87,11 +87,14 @@ html(lang="en")
                         - var parts = topic.split('INFRA INDIA MART')
                         span(style='color: #a30000') #{locals.company}
                         | #{parts[1]}
-                    h2.code #{locals.code} 
+                    h2.code 
+                        | #{locals.code} 
+                        br
+                        | OPC 53 grade / OPC 43 grade
                     h2.code1 #{locals.standard} 
                     p.info.poppins-regular #{locals.data}
                 .items
-                    h1.size-increase.mtop Products we supply
+                    h1.size-increase.mtop We associate with
                     .products
                         each product in productsList
                             .container 
@@ -113,10 +116,9 @@ html(lang="en")
                                     p   
                                         i.fas.fa-map-marker-alt
                                             span(style="font-weight: normal;") 
-                                                | &nbsp;&nbsp;Reg
-                                                istered Office,
+                                                | &nbsp;&nbsp;Registered Office,
                                                 br
-                                                | 305, Shivam Arcade, Nr. S.P.Ring Road, Hanspura, Ahmedabad &#8211;382330 &#40;Gujarat&#41;
+                                        p(style="padding-left:25px") 305, Shivam Arcade, Nr. S.P.Ring Road, Hanspura, Ahmedabad &#8211;382330 &#40;Gujarat&#41;
                                     p  
                                         i.fas.fa-phone-alt
                                             span(style="font-weight: normal;") &nbsp;&nbsp;&plus;91 &#8211; 9099180208 &#47; 9173822567 
