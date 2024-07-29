@@ -14,13 +14,13 @@ html(lang="en")
         section#welcome_section
                 .banner
                     .slider
-                        img(src="/images/hero-carousel-1.jpg", alt="image1")
+                        img(src="/images/page-title-bg.jpg", alt="image1")
                     .overlay 
                         .navbar 
                             .logo 
-                                img.fade-in(src="/images/IIM.logo.png", alt="logo")
+                                img.fade-in(src="/images/logo-2.png", alt="logo")
                             .ham 
-                                ul#menu(style="display:none")
+                                ul#menu
                                     li.underline1 
                                         a.menuItem(href="/home") Home
                                     li.underline1 
@@ -35,7 +35,7 @@ html(lang="en")
                                         a.menuItem(href="/home/contact") Contact Us
                                 button.hamburger
                                     i.menuIcon.material-icons menu
-                                    i.closeIcon.material-icons(style="display:none") close
+                                    i.closeIcon.material-icons close
                             .menu 
                                 ul.list.fade-in 
                                     li.underline 
@@ -47,7 +47,7 @@ html(lang="en")
                                     li.underline
                                         a(href="/home/steel") Steel
                                     li.underline.active 
-                                        a(href="/home/inframart") Infra-Mart
+                                        a(href="/home/inframart") Infra Mart
                                     li.underline
                                         a(href="/home/contact") Contact Us
                         .welcome_message.fade-in 
@@ -55,8 +55,8 @@ html(lang="en")
                                 p 
                                     span.orange_text Home 
                                     | / Market
-        section 
-            h1(style="text-align:center") Coming Soon!
+        section.construction 
+            img(src="/images/temp.png", alt="Coming Soon!")
         script             
             include ../js/navbar2.js            
             include ../js/scroll.js   
