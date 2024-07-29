@@ -25,18 +25,18 @@ html(lang="en")
             section#welcome_section
                 .banner
                     .slider
-                        img(src="/images/hero-carousel-1.jpg", alt="image1")
+                        img(src="/images/page-title-bg.jpg", alt="image1")
                     .overlay 
                         .navbar 
                             .logo 
-                                img.fade-in(src="/images/IIM.logo.png", alt="logo")
+                                img.fade-in(src="/images/logo-2.png", alt="logo")
                             .ham 
-                                ul#menu(style="display:none")
-                                    li.underline1
+                                ul#menu
+                                    li.underline1.active1 
                                         a.menuItem(href="/home") Home
                                     li.underline1 
                                         a.menuItem(href="/home/about") About
-                                    li.underline1.active1  
+                                    li.underline1 
                                         a.menuItem(href="/home/cement") Cement
                                     li.underline1 
                                         a.menuItem(href="/home/steel") Steel
@@ -58,7 +58,7 @@ html(lang="en")
                                     li.underline
                                         a(href="/home/steel") Steel
                                     li.underline 
-                                        a(href="/home/inframart") Infra-Mart
+                                        a(href="/home/inframart") Infra Mart
                                     li.underline
                                         a(href="/home/contact") Contact Us
                         .welcome_message.fade-in 
@@ -67,137 +67,137 @@ html(lang="en")
                                     span.orange_text Home 
                                     | / Cement
                         
-            section#home.fade-in
-                .formbox 
-                    form(action="/postCementInquiry" method="post")
-                            input(type="text" id="name" name="name" required placeholder="Name")
-                            .fields
-                                input(type="tel" id="phone" name="phone" pattern="^([6-9][0-9]{9})$" required placeholder="Contact.No")
-                                input(type="email" id="email" name="email" required placeholder="Email")
-                            input(type="text" id="company" name="company" required placeholder="Company name")
-                            input(type="text" id="subject" name="subject" required placeholder="Requirement")
-                            textarea(id="message" name="message" rows="4" required placeholder="Message")
-                            button(type="submit") Submit
-                .slider1
-                        .slides1 
-                            input(type="radio" name="radio-button1" id="R1")
-                            input(type="radio" name="radio-button1" id="R2")
-                            input(type="radio" name="radio-button1" id="R3")
-                            input(type="radio" name="radio-button1" id="R4")
-                            input(type="radio" name="radio-button1" id="R5")
+            //- section#home.fade-in
+            //-     .formbox 
+            //-         form(action="/postCementInquiry" method="post")
+            //-                 input(type="text" id="name" name="name" required placeholder="Name")
+            //-                 .fields
+            //-                     input(type="tel" id="phone" name="phone" pattern="^([6-9][0-9]{9})$" required placeholder="Contact.No")
+            //-                     input(type="email" id="email" name="email" required placeholder="Email")
+            //-                 input(type="text" id="company" name="company" required placeholder="Company name")
+            //-                 input(type="text" id="subject" name="subject" required placeholder="Requirement")
+            //-                 textarea(id="message" name="message" rows="4" required placeholder="Message")
+            //-                 button(type="submit") Submit
+            //-     .slider1
+            //-             .slides1 
+            //-                 input(type="radio" name="radio-button1" id="R1")
+            //-                 input(type="radio" name="radio-button1" id="R2")
+            //-                 input(type="radio" name="radio-button1" id="R3")
+            //-                 input(type="radio" name="radio-button1" id="R4")
+            //-                 input(type="radio" name="radio-button1" id="R5")
 
-                            .slide1.first1
-                                img(src="/images/hero-carousel-1.jpg" alt="img_1")
-                            .slide1
-                                img(src="/images/hero-carousel-2.jpg" alt="img_2")
-                            .slide1
-                                img(src="/images/hero-carousel-3.jpg" alt="img_3")
-                            .slide1
-                                img(src="/images/hero-carousel-4.jpg" alt="img_4")
-                            .slide1
-                                img(src="/images/hero-carousel-5.jpg" alt="img_5")
+            //-                 .slide1.first1
+            //-                     img(src="/images/hero-carousel-1.jpg" alt="img_1")
+            //-                 .slide1
+            //-                     img(src="/images/hero-carousel-2.jpg" alt="img_2")
+            //-                 .slide1
+            //-                     img(src="/images/hero-carousel-3.jpg" alt="img_3")
+            //-                 .slide1
+            //-                     img(src="/images/hero-carousel-4.jpg" alt="img_4")
+            //-                 .slide1
+            //-                     img(src="/images/hero-carousel-5.jpg" alt="img_5")
 
-                            .navigation-auto1
-                                .autobutton1
-                                .autobutton2
-                                .autobutton3
-                                .autobutton4
-                                .autobutton5
+            //-                 .navigation-auto1
+            //-                     .autobutton1
+            //-                     .autobutton2
+            //-                     .autobutton3
+            //-                     .autobutton4
+            //-                     .autobutton5
 
-                        .navigation-manual1
-                            label(for="R1" class="manualbutton")
-                            label(for="R2" class="manualbutton")
-                            label(for="R3" class="manualbutton")
-                            label(for="R4" class="manualbutton")
-                            label(for="R5" class="manualbutton")
-            section#filter-product.fade-in 
-                h1 We have large variety of products based on following two categories
+            //-             .navigation-manual1
+            //-                 label(for="R1" class="manualbutton")
+            //-                 label(for="R2" class="manualbutton")
+            //-                 label(for="R3" class="manualbutton")
+            //-                 label(for="R4" class="manualbutton")
+            //-                 label(for="R5" class="manualbutton")
+            section#filter-product
+                h1.fade-in  We have large variety of products based on categories
                 .outerboxg 
-                    h2 By cement product/type
+                    h2.fade-in  By cement product/type
                     .gridbox 
-                        .categoryg 
+                        .categoryg.fade-in  
                             h3 OPC 53 - OPC 43
                             form(action="/getMoreInfo" method="post") 
                                 input(type="hidden", name="name" value="opc")
                                 button(type="submit") More info
                                 button(type="button" id="inquiry") Inquire
-                        .categoryg 
+                        .categoryg.fade-in  
                             h3 SRPC/SRC 
                             form(action="/getMoreInfo" method="post") 
                                 input(type="hidden", name="name" value="srpc")
                                 button(type="submit") More info
                                 button(type="button" id="inquiry") Inquire
-                        .categoryg 
+                        .categoryg.fade-in  
                             h3 PPC 
                             form(action="/getMoreInfo" method="post") 
                                 input(type="hidden", name="name" value="ppc")
                                 button(type="submit") More info
                                 button(type="button" id="inquiry") Inquire
-                        .categoryg 
+                        .categoryg.fade-in  
                             h3 PSC/Slage 
                             form(action="/getMoreInfo" method="post") 
                                 input(type="hidden", name="name" value="psc")
                                 button(type="submit") More info
                                 button(type="button" id="inquiry") Inquire
-            section#filter-manufacturer.fade-in  
+            section#filter-manufacturer
                 .outerboxg 
-                    h2 By cement manufacturers   
+                    h2.fade-in  By cement manufacturers   
                     .gridbox
-                        .categoryg 
+                        .categoryg.fade-in   
                             img(src="/images/c16.png", alt="logo")
                             form(action="/getMoreInfo1" method="post") 
                                 input(type="hidden", name="name" value="acc")
                                 button(type="submit") More info
                                 button(type="button" id="inquiry") Inquire
-                        .categoryg 
+                        .categoryg.fade-in   
                             img(src="/images/c17.png", alt="logo")
                             form(action="/getMoreInfo1" method="post") 
                                 input(type="hidden", name="name" value="jkl")
                                 button(type="submit") More info
                                 button(type="button" id="inquiry") Inquire
-                        .categoryg 
+                        .categoryg.fade-in   
                             img(src="/images/c9.png", alt="logo")
                             form(action="/getMoreInfo1" method="post") 
                                 input(type="hidden", name="name" value="hathi")
                                 button(type="submit") More info
                                 button(type="button" id="inquiry") Inquire
-                        .categoryg 
+                        .categoryg.fade-in   
                             img(src="/images/c10.png", alt="logo")
                             form(action="/getMoreInfo1" method="post") 
                                 input(type="hidden", name="name" value="sagar")
                                 button(type="submit") More info
                                 button(type="button" id="inquiry") Inquire
-                        .categoryg 
+                        .categoryg.fade-in   
                             img(src="/images/c11.png", alt="logo")
                             form(action="/getMoreInfo2" method="post") 
                                 input(type="hidden", name="name" value="shree")
                                 button(type="submit") More info
                                 button(type="button" id="inquiry") Inquire
-                        .categoryg 
+                        .categoryg.fade-in   
                             img(src="/images/c12.png", alt="logo")
                             form(action="/getMoreInfo2" method="post") 
                                 input(type="hidden", name="name" value="kamal")
                                 button(type="submit") More info
                                 button(type="button" id="inquiry") Inquire
-                        .categoryg 
+                        .categoryg.fade-in   
                             img(src="/images/c13.png", alt="logo")
                             form(action="/getMoreInfo2" method="post") 
                                 input(type="hidden", name="name" value="birla")
                                 button(type="submit") More info
                                 button(type="button" id="inquiry") Inquire
-                        .categoryg 
+                        .categoryg.fade-in   
                             img(src="/images/c14.png", alt="logo")
                             form(action="/getMoreInfo2" method="post") 
                                 input(type="hidden", name="name" value="jks")
                                 button(type="submit") More info
                                 button(type="button" id="inquiry") Inquire
-                        .categoryg 
+                        .categoryg.fade-in   
                             img(src="/images/c15.png", alt="logo")
                             form(action="/getMoreInfo2" method="post") 
                                 input(type="hidden", name="name" value="bangur")
                                 button(type="submit") More info
                                 button(type="button" id="inquiry") Inquire
-                        .categoryg 
+                        .categoryg.fade-in   
                             img(src="/images/c19.png", alt="logo")
                             form(action="/getMoreInfo1" method="post") 
                                 input(type="hidden", name="name" value="hathi")
@@ -217,10 +217,9 @@ html(lang="en")
                                     p   
                                         i.fas.fa-map-marker-alt
                                             span(style="font-weight: normal;") 
-                                                | &nbsp;&nbsp;Reg
-                                                istered Office,
+                                                | &nbsp;&nbsp;Registered Office,
                                                 br
-                                                | 305, Shivam Arcade, Nr. S.P.Ring Road, Hanspura, Ahmedabad &#8211;382330 &#40;Gujarat&#41;
+                                        p(style="padding-left:25px") 305, Shivam Arcade, Nr. S.P.Ring Road, Hanspura, Ahmedabad &#8211;382330 &#40;Gujarat&#41;
                                     p  
                                         i.fas.fa-phone-alt
                                             span(style="font-weight: normal;") &nbsp;&nbsp;&plus;91 &#8211; 9099180208 &#47; 9173822567 
