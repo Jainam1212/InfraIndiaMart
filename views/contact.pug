@@ -24,13 +24,13 @@ html(lang="en")
         section#welcome_section
                 .banner
                     .slider
-                        img(src="/images/hero-carousel-1.jpg", alt="image1")
+                        img(src="/images/page-title-bg.jpg", alt="image1")
                     .overlay 
                         .navbar 
                             .logo 
-                                img.fade-in(src="/images/IIM.logo.png", alt="logo")
+                                img.fade-in(src="/images/logo-2.png", alt="logo")
                             .ham 
-                                ul#menu(style="display:none")
+                                ul#menu
                                     li.underline1 
                                         a.menuItem(href="/home") Home
                                     li.underline1 
@@ -57,7 +57,7 @@ html(lang="en")
                                     li.underline
                                         a(href="/home/steel") Steel
                                     li.underline 
-                                        a(href="/home/inframart") Infra-Mart
+                                        a(href="/home/inframart") Infra Mart
                                     li.underline.active
                                         a(href="/home/contact") Contact Us
                         .welcome_message.fade-in 
@@ -71,8 +71,11 @@ html(lang="en")
                 .container1
                     .innerbox1 
                         img(src="/images/locations.png", alt="image")
-                        //- h2 Address 
-                        p 305, Shivam Arcade, Nr. S.P.Ring Road, Hanspura, Ahmedabad &#8211;382330 &#40;Gujarat&#41;
+                        //- h2 Address Ahmedabad &#8211;382330 &#40;Gujarat&#41;
+                        p 
+                            | 305, Shivam Arcade,
+                            br 
+                            | Nr. S.P.Ring Road, Ahmedabad, Gujarat - 382330
                     .innerbox2 
                         .box1 
                             img(src="/images/phone-call.png", alt="image")
@@ -86,9 +89,13 @@ html(lang="en")
                             //- h2 Email us
                             p 
                                 a(href="mailto:info@infraindiamart.com") info&#64;infraindiamart&#46;com 
+                                |
+                                br
+                                a(href="mailto:infraindiamart@gmail.com") infraindiamart&#64;gmail.com 
                 .container2
                     .mapbox 
-                        iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d917.5718692849972!2d72.68288841236753!3d23.086569958343553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e814421d6f949%3A0x5e78cd2c1072fcf3!2sShivam%20arcade%202!5e0!3m2!1sen!2sin!4v1716624317579!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade")
+                        //- iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d917.5718692849972!2d72.68288841236753!3d23.086569958343553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e814421d6f949%3A0x5e78cd2c1072fcf3!2sShivam%20arcade%202!5e0!3m2!1sen!2sin!4v1716624317579!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade")
+                        img(src="/images/girlcc.jpg", alt="customer care" style="width: 100%;height: 100%;object-fit: cover;")
                     .formbox
                         form(action="/postContactPage" method="post")
                             input(type="text" id="name" name="name" required placeholder="Name")
@@ -96,7 +103,7 @@ html(lang="en")
                                 input(type="tel" id="phone" name="phone" pattern="^([6-9][0-9]{9})$" required placeholder="Contact.No")
                                 input(type="email" id="email" name="email" required placeholder="Email")
                             input(type="text" id="subject" name="subject" required placeholder="Requirement")
-                            textarea(id="message" name="message" rows="4" required placeholder="Message")
+                            textarea(id="message" name="message" rows="2" placeholder="Message")
                             button(type="submit") Submit
         section#footer
                 .banner12
@@ -111,10 +118,9 @@ html(lang="en")
                                     p   
                                         i.fas.fa-map-marker-alt
                                             span(style="font-weight: normal;") 
-                                                | &nbsp;&nbsp;Reg
-                                                istered Office,
+                                                | &nbsp;&nbsp;Registered Office,
                                                 br
-                                                | 305, Shivam Arcade, Nr. S.P.Ring Road, Hanspura, Ahmedabad &#8211;382330 &#40;Gujarat&#41;
+                                        p(style="padding-left:25px") 305, Shivam Arcade, Nr. S.P.Ring Road, Hanspura, Ahmedabad &#8211;382330 &#40;Gujarat&#41;
                                     p  
                                         i.fas.fa-phone-alt
                                             span(style="font-weight: normal;") &nbsp;&nbsp;&plus;91 &#8211; 9099180208 &#47; 9173822567 
