@@ -592,7 +592,7 @@ li.active1 a {
     }
     .logo img {
         width: 80%;
-        object-fit: cover;
+        object-fit: contain;
     }
     .info{
         height: 50vh;
