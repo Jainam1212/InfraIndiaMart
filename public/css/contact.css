@@ -541,7 +541,10 @@ li.active1 a {
     .data {
         flex-direction: column;
     }
-
+    .logo img {
+        width: 80%;
+        object-fit: cover;
+    }
     .leftbox p {
         width: auto;
     }
