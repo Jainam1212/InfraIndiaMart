@@ -590,6 +590,10 @@ li.active1 a {
     .data {
         flex-direction: column;
     }
+    .logo img {
+        width: 80%;
+        object-fit: cover;
+    }
     .info{
         height: 50vh;
         overflow: scroll;
