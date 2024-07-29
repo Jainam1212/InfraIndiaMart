@@ -484,7 +484,7 @@ button:hover {
 
 #menu {
     position: fixed;
-    transform: translateY(-100%);
+/*     transform: translateY(-100%); */
     height: fit-content;
     transition: transform 0.2s;
     top: 0;
