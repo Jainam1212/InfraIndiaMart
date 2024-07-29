@@ -702,7 +702,7 @@ li.active1 a {
     }
     .logo img {
         width: 80%;
-        object-fit: cover;
+        object-fit: contain;
     }
     .slide1 img {
         height: 30vh;
