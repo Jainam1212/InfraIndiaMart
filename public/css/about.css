@@ -98,14 +98,14 @@
 /* home page slider */
 .banner {
     width: 100%;
-    height: 25vh;
+    height: 30vh;
     position: relative;
     overflow: hidden;
 }
 
 .slider {
     width: 100%;
-    height: 25vh;
+    height: 30vh;
     position: absolute;
     top: 0;
 }
@@ -118,16 +118,19 @@
 
 .overlay1 {
     width: 100%;
-    height: 25vh;
+    height: 30vh;
     background: linear-gradient(rgb(69 69 69 / 80%), rgb(69 69 69 / 80%));
     position: absolute;
     top: 0;
 }
 
 .logo {
-    height: 3rem;
+    height: 2rem;
     margin: 1rem;
     width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 .logo img {
@@ -145,7 +148,9 @@
 }
 
 .navbar.scrolled {
-    background: linear-gradient(rgba(225, 225, 225, 0.85), rgba(224, 224, 224, 0.85));
+    /* background: linear-gradient(rgb(225, 225, 225), rgb(224, 224, 224)); */
+    background: white;
+    box-shadow: 5px 5px 15px -5px grey;
 }
 
 /* .list li:hover a {
@@ -242,6 +247,7 @@ li.active a {
     justify-content: center;
     box-shadow: 0px 0px 20px color-mix(in srgb, var(--default-color), transparent 90%);
     padding-right: 2rem;
+    background: white;
     position: relative;
 }
 .container1 p{
@@ -258,7 +264,7 @@ li.active a {
     position: absolute;
 }
 .container2{
-    box-shadow: 0px 0px 20px color-mix(in srgb, var(--default-color), transparent 90%);
+    /* box-shadow: 0px 0px 20px color-mix(in srgb, var(--default-color), transparent 90%); */
     height: 82%;
 }
 .container2 img{
@@ -266,6 +272,7 @@ li.active a {
     width: 100%;
     object-fit: cover;
 }
+
 
 
 .states{
@@ -424,6 +431,7 @@ li.active a {
 
 #menu {
     position: fixed;
+    transform: translateY(-100%);
     height: fit-content;
     transition: transform 0.2s;
     top: 0;
@@ -480,9 +488,7 @@ li.active1 a {
     .data {
         flex-direction: column;
     }
-    .counter-numbers{
-    font-size: xx-large;
-    }
+
     .leftbox p {
         width: auto;
     }
@@ -513,14 +519,11 @@ li.active1 a {
     .main-container{
         flex-direction: column;
     }
-    .counter-numbers{
-    font-size: xx-large;
-    }
     .container1{
         width: auto;
     }
 }
-@media screen and (max-width: 1070px) {
+@media screen and (max-width: 1000px) {
     .ham{
         display: block;
     }
@@ -528,7 +531,7 @@ li.active1 a {
         display: none;
     }
 }
-@media screen and (max-width: 85000px) and (min-width:1071px) {
+@media screen and (max-width: 85000px) and (min-width:1001px) {
     .ham{
         display: none;
     }
